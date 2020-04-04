@@ -15,9 +15,7 @@ body {
     overflow-x: hidden;
     color: #ffffff;
 }
-.nv{
-    background-color: darkgrey;
-}
+
 #spantext {
     color: yellow;
 }
@@ -100,14 +98,14 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-input[type="email"] {
+/* input[type="email"] {
     background: transparent;
     border: 1px solid #ffffff;
     padding: .8em .7em;
     border-radius: 20px;
     outline: none !important;
     font-size: 14px;
-}
+} */
 
 .click-me {
     margin-top: 20px;
@@ -142,19 +140,18 @@ input[type="email"] {
     border-radius: 15px;
 }
 
-.submit-btn {
+#bn {
     border: 0;
     color: black;
     text-decoration: none;
-    outline: none !important;
     padding: 5px;
     margin: 1%;
     background-color: orange;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
-.submit-btn:hover {
+#bn:hover {
     background-color: orangered;
 }
 
@@ -211,8 +208,12 @@ h4 {
 }
 
 .checkout {
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 #list {
@@ -280,8 +281,8 @@ a {
 }
 
 figure img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 .karibu-txt {
@@ -321,7 +322,7 @@ figure img {
 
 /* Collapse nav start*/
 .top-nav-collapse {
-    background-color: #3f51b5 !important;
+    background-color: darkgrey !important;
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -375,7 +376,26 @@ figure img {
     .cdata {
         padding: 10px 5px 10px 5px;
     }
+.input-group input {
+    width: 60%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 1%;
+    display: inline-block;
+    background-color: orange;
+    border-radius: 15px;
+}
 
+.text-area textarea {
+    width: 60%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 1%;
+    background-color: orange;
+    border-radius: 15px;
+}
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
@@ -395,12 +415,53 @@ figure img {
         margin-right: 20px;
         margin-left: 12px;
     }
+    .input-group input {
+    width: 60%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 1%;
+    display: inline-block;
+    background-color: orange;
+    border-radius: 15px;
+}
+
+.text-area textarea {
+    width: 60%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 1%;
+    background-color: orange;
+    border-radius: 15px;
+}
+
 }
 
 @media (max-width: 991px) {
     .navbar:not(.top-nav-collapse) {
-        background: #3f51b5 !important;
+        background: orangered !important;
     }
+.input-group input {
+    width: 60%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 1%;
+    display: inline-block;
+    background-color: orange;
+    border-radius: 15px;
+}
+
+.text-area textarea {
+    width: 60%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 1%;
+    background-color: orange;
+    border-radius: 15px;
+}
 
 }
 

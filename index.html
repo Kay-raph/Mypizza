@@ -25,7 +25,7 @@
 <!--Start Navigation //-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="nv">
-    <center><h1 id="piz-pap" class=""><b>Maa<span id="spantext">Piz</span>za</b></h1></center>
+    <center><h1 id="piz-pap" class=""><b>My Piz<span id="spantext">za Pal</span>ace</b></h1></center>
     <img id="mg" src="images\pizalog.png">
     </div>
     <div class="navi">
@@ -44,7 +44,7 @@
     <div class="overlay">
         <div id="push"></div>
         <div class="landing-text">
-            <h1 class="text-white text-center"><span class="pizz">Pizza </span><span class="exc">pap!</span></h1>
+            <h1 class="text-white text-center"><span class="pizz">My Pizza </span><span class="exc">Palace!</span></h1>
             <h2 class="text-white text-center">Get your pizza in an instant.</h2>
         </div>
         <div class="h-buttons text-center">
@@ -110,10 +110,9 @@
 <div class="orders" id="order">
     <h1 class="text-center" id="order-pizza">Order Pizza</h1>
     <div class="form-group row">
-        <div class="col-sm-2"></div>
         <div class="col-sm-8 order-overlay text-center">
-            <form class="col-sm-6 offset-sm-3 text-center">
-                <label>Pick your pizza Flavour:</label>
+            <form class="col-sm-6 offset-sm-3 text-center" id="form">
+                <label>Choose your Flavour:</label>
                 <select class="custom-select custom-select-md mb-3 flavour" required>
                     <option value="vegtikka">Veg Tikka</option>
                     <option value="chickentikka">Chicken Tikka</option>
@@ -153,7 +152,7 @@
                     <option value="beef">Beef Peperoni @ sh. 170</option>
                     <option value="chicken">Periperi Chicken @ sh. 170</option>
                 </select>
-                <label for="number">Number of Pizza's</label>
+                <label for="number">Number of Pizzas</label>
                 <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
 
 
@@ -171,7 +170,7 @@
 
 <div class="order-summary" id="sum-order">
     <h1 class="text-center" id="summary">Order Summary</h1>
-    <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+    <h2 class="text-center summary">Dear Customer, your order is as follows:</h2>
     <ol id="list" class="text-center sum">
     </ol>
 
@@ -194,16 +193,17 @@
         <button class='delivernot'>Pick Up</button>
     </div>
 </div>
-
+<center>
 <div class="contacts" id="contact">
+   
     <div class="contact-overlay"">
-        <h1 class="text-center contact text-white">Contacts:</h1>
+        <h1 class="text-center contact text-white">Contacts Us:</h1>
         <div class="row">
-            <div class="col-sm-1"></div>
             <div class="col-sm-5 subs">
-                <h2 class="text-white text-center"> Call Us </h2>
+                <h2 class="text-white text-center"> Call Us on</h2>
                 <p class="text-center">(+254)710-288-908</p>
-                <form>
+                <p class="text-center">(+254)736-774-779</p>
+                <!-- <form>
                     <div class="email-info">
                         <div class="form-group fill-all-form">
                             <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
@@ -213,27 +213,30 @@
                     <div class=" email-info text-center">
                         <button class="btn click-me" onclick="subscribe();">Subscribe</button>
                     </div>
-                </form>
+                </form> -->
             </div>
-            <div class="col-sm-5">
-                <h4 class="text-center get-pizza">We would love to hear from you..send us an email</h4>
+           
+                
             </div>
+
             <div class="form-box"><br>
+                <h4 class="text-center get-pizza">We would love to hear from you..send us an email</h4>
                 <h2>Email Us</h2>
-                <form class="col-sm-6 offset-sm-3 text-center" id="frm">
+               <form class="col-sm-6 offset-sm-3 text-center" id="frm">
                     <!-- <div class="input-group">
                         <input type="text" style="color: honeydew; font-size: large;" placeholder="First Name">
                         <input type="text" style="color: honeydew; font-size: large;" placeholder="Last Name">
                     </div> -->
                     <div class="input-group">
-                        <input type="number" style="color: honeydew; font-size: large;" placeholder="Phone" required>
-                        <input type="email" style="color: honeydew; font-size: large;" placeholder="Email" required>
+                        <input type="number" style="color: honeydew; font-size: small;" placeholder="Phone" required>
+                        <input type="email" style="color: honeydew; font-size: small;" placeholder="Email" required>
                     </div>
                     <div class="text-area">
-                        <textarea rows="4" style="color: honeydew; font-size: large;" placeholder="Type Message"></textarea>
+                        <textarea rows="4" style="color: honeydew; font-size: small;" placeholder="Type Message"></textarea>
                     </div>
-                    <button type="submit" class="submit-btn"><a style="text-decoration: none;" href="">SEND MESSAGE</a></button>
+                    <button id="bn" type="submit" class="submit-btn"><a style="text-decoration: none;" href="">Send</a></button>
         </div>
+        </center>
     </div>
     
 </div>
